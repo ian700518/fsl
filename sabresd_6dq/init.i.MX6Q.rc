@@ -11,3 +11,12 @@ on boot
 
     # set front camera.
     setprop front_camera_name 0
+
+    chmod 0666 /dev/ttymxc2
+    chmod 0755 /system/etc/ubx-setup.sh
+    start ubx-setup
+
+    service ubx-setup /system/etc/ubx-setup.sh
+    user root
+    group root
+    oneshot

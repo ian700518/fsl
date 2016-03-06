@@ -22,7 +22,10 @@ PRODUCT_COPY_FILES += \
         device/fsl/sabresd_6dq/init.i.MX6DL.rc:root/init.freescale.i.MX6DL.rc \
 	device/fsl/sabresd_6dq/init.i.MX6QP.rc:root/init.freescale.i.MX6QP.rc \
 	device/fsl/sabresd_6dq/audio_policy.conf:system/etc/audio_policy.conf \
-	device/fsl/sabresd_6dq/audio_effects.conf:system/vendor/etc/audio_effects.conf
+	device/fsl/sabresd_6dq/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+	hardware/u-blox/gps/u-blox.conf:system/etc/u-blox.conf \
+	hardware/u-blox/gps/gps.conf:system/etc/gps.conf \
+	hardware/u-blox/gps/ubx-setup.sh:system/etc/ubx-setup.sh
 
 PRODUCT_COPY_FILES +=	\
 	external/linux-firmware-imx/firmware/vpu/vpu_fw_imx6d.bin:system/lib/firmware/vpu/vpu_fw_imx6d.bin 	\
