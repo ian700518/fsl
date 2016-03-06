@@ -115,6 +115,7 @@ PRODUCT_PACKAGES += \
 	libbt-vendor				\
 	libbt-vendor-broadcom		\
 	magd                                    \
+	fsl_sensor_fusion			\
 	consumerir.imx6
 
 

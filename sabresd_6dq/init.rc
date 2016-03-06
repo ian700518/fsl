@@ -245,8 +245,12 @@ service wpa_supplicant /system/bin/wpa_supplicant \
     oneshot
 
 # magd daemon
-service magd /system/bin/magd
-    class late_start
+#service magd /system/bin/magd
+#    class late_start
+
+
+service sensor_fusion /system/bin/fsl_sensor_fusion
+    class main
     seclabel u:r:sensors:s0
     user system
     group input
