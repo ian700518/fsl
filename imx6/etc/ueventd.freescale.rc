@@ -32,6 +32,10 @@
 /dev/FreescaleMagnetometer                      0660  system input
 /dev/FreescaleGyroscope                         0660  system input
 
+#battery sysfs
+/sys/devices/soc0/soc.0/2100000.aips-bus/21a8000.i2c/i2c-2/2-0034/wm831x-power/main_battery_online 0660 system system
+/sys/devices/soc0/soc.0/2100000.aips-bus/21a8000.i2c/i2c-2/2-0034/wm831x-power/main_battery_capacity 0660 system system
+/sys/devices/soc0/soc.0/2100000.aips-bus/21a8000.i2c/i2c-2/2-0034/wm831x-power/backup_battery_charging 0660 system system
 
 # sysfs properties
 /sys/devices/virtual/input/input*   name        0660  root   input
