@@ -19,4 +19,4 @@ on boot
     service ubx-setup /system/etc/ubx-setup.sh
     user root
     group root
-    setprop front_camera_name uvc,ov5642_camera,ov5640_camera
+    oneshot

@@ -1,5 +1,6 @@
 /dev/pmem_gpu             0660   system     graphics
 /dev/ttymxc2              0660   bluetooth  net_bt_stack
+/dev/ttymxc3              0666   root  system
 /dev/ttymxc4              0660   bluetooth  net_bt_stack
 /dev/snd/*                0660   system     audio
 /dev/ttyUSB*              0640   radio      radio
@@ -28,6 +29,7 @@
 /sys/class/misc/Freescale*          position    0660  root   input
 /sys/class/misc/Freescale*          poll_delay  0660  root   input
 /sys/class/misc/Freescale*          fifo        0660  root   input
+/sys/devices/virtual/misc/Freescale* position   0666  root   input
 /dev/FreescaleAccelerometer                     0660  system input
 /dev/FreescaleMagnetometer                      0660  system input
 /dev/FreescaleGyroscope                         0660  system input
@@ -36,6 +38,9 @@
 /sys/devices/soc0/soc.0/2100000.aips-bus/21a8000.i2c/i2c-2/2-0034/wm831x-power/main_battery_online 0660 system system
 /sys/devices/soc0/soc.0/2100000.aips-bus/21a8000.i2c/i2c-2/2-0034/wm831x-power/main_battery_capacity 0660 system system
 /sys/devices/soc0/soc.0/2100000.aips-bus/21a8000.i2c/i2c-2/2-0034/wm831x-power/backup_battery_charging 0660 system system
+
+# backlight on/off sysfs
+/sys/devices/soc0/soc.0/2000000.aips-bus/20b4000.gpio/gpio/gpio203/value 0666 system system
 
 # sysfs properties
 /sys/devices/virtual/input/input*   name        0660  root   input

@@ -122,6 +122,10 @@ on boot
     chmod 0664 /sys/devices/system/cpu/cpu2/online
     chown root system /sys/devices/system/cpu/cpu3/online
     chmod 0664 /sys/devices/system/cpu/cpu3/online
+    chown root system  /sys/devices/soc0/soc.0/2000000.aips-bus/20b4000.gpio/gpio/gpio203/value
+    chmod 0666  /sys/devices/soc0/soc.0/2000000.aips-bus/20b4000.gpio/gpio/gpio203/value
+    chown root system /dev/ttymxc3
+    chmod 0666 /dev/ttymxc3
 
     # prepare for ril
     setprop gsm.ril.delay 15
@@ -243,6 +247,8 @@ service wpa_supplicant /system/bin/wpa_supplicant \
     class late_start
     disabled
     oneshot
+
+#    -ddd -I/system/etc/wifi/wpa_supplicant_overlay.conf \
 
 # magd daemon
 #service magd /system/bin/magd
