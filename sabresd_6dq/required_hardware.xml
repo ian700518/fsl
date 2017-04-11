@@ -19,4 +19,5 @@
 -->
 <permissions>
     <feature name="android.hardware.camera.any" />
+	<feature name="android.hardware.bluetooth" />
 </permissions>
