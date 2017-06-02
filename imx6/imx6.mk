@@ -14,7 +14,7 @@ PRODUCT_PACKAGES += \
 	Gallery		    			\
 	SoundRecorder				\
 	Camera					\
-        LegacyCamera                            \
+    LegacyCamera                            \
 	Email					\
 	FSLOta					\
 	CactusPlayer                            \
@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
 	display_mode_fb0.conf                   \
 	display_mode_fb2.conf                   \
 	display_mode_fb4.conf					\
-	Doobo
 
 #FREESCALE_EXTENDED
 PRODUCT_PACKAGES += freescale-extended 		\
